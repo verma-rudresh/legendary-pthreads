@@ -29,9 +29,9 @@ Your thread library needs to be built into a dynamically-linked shared library.
 * Mutex_locks to ensure synchronization.
 
 ## Assumptions:
-* The id of each thread passed to createThread function must be > 0 and unique.
-* After exiting, threads are send to FINISHED state and are later freed via calling <code>freeThreads()</code> function.
-* Each thread is assigned its private stack as the jumping of environment through setjmp and longjmp functions. 
+* The id of each thread passed to <code>createThread()</code> function must be > 0 and unique.
+* After exiting, threads are send to <code>FINISHED</code> state and are later freed via calling <code>freeThreads()</code> function.
+* Each thread is assigned its private stack as the jumping of environment through <code>setjmp</code> and <code>longjmp</code> functions. 
 * Each thread must have its own stack so that returning from the function don’t mess-up the stack and we don’t loose the progression of the function the thread is running.
 
 
@@ -49,8 +49,8 @@ Your thread library needs to be built into a dynamically-linked shared library.
 * Lock is tested for the producer consumer problem and is working correctly.
 
 ## Output:
-* matResult.txt stores the information about the context switching time for both our implementation and pthread library.
-* ProdCons.txt stores the information about the buying and selling of different items.
+* <code>matResult.txt</code> stores the information about the context switching time for both our implementation and pthread library.
+* <code>ProdCons.txt</code> stores the information about the buying and selling of different items.
 
 ![image](https://user-images.githubusercontent.com/61209181/137616790-dc11f166-fb93-411f-8eea-52436cb1074e.png)
 **Fig.  Graph of Total thread execution time versus number of threads in myOwnThread library.**
