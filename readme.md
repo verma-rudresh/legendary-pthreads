@@ -1,4 +1,4 @@
-# OPERATING SYSTEM
+# OPERATING SYSTEMS
 ## My own Thread library similar to POSIX
 ## Problem Statement:
 A quick google tells us that “A thread is a basic unit of CPU utilization, consisting of a program counter, a stack, and a set of registers, (and a thread ID)”.
