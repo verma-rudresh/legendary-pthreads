@@ -2,7 +2,9 @@
 ## My own Thread library similar to POSIX
 ## Problem Statement:
 A quick google tells us that “A thread is a basic unit of CPU utilization, consisting of a program counter, a stack, and a set of registers, (and a thread ID)”.
+
 ![image](https://user-images.githubusercontent.com/61209181/137616245-d44cac7b-94e2-4465-a8c1-f7b13bd5d047.png)
+
 User threads, are above the kernel and without kernel support. These are the threads that application programmers use in their programs.
 In this assignment, you will create a user level thread level library which implies that it is supported above the kernel in user space and are managed without kernel support.
 
