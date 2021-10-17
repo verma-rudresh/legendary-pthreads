@@ -52,6 +52,6 @@ Your thread library needs to be built into a dynamically-linked shared library.
 * <code>matResult.txt</code> stores the information about the context switching time for both our implementation and pthread library.
 * <code>ProdCons.txt</code> stores the information about the buying and selling of different items.
 
-![image](https://user-images.githubusercontent.com/61209181/137616790-dc11f166-fb93-411f-8eea-52436cb1074e.png)
+* ![image](https://user-images.githubusercontent.com/61209181/137616790-dc11f166-fb93-411f-8eea-52436cb1074e.png)
 
 **Fig.  Graph of Total thread execution time versus number of threads in myOwnThread library.**
