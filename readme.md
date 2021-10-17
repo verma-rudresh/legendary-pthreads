@@ -12,6 +12,7 @@ In this assignment, you will create a user level thread level library which impl
 
 ## Tests:
 You will test your implementations using the following application programs:
+
 Multi threaded Matrix Multiplication with N threads 
 * Plot a graph with respect to time taken versus N (=1 to 40) 
 * Calculate the average context switch overhead with our thread library 
@@ -22,3 +23,18 @@ Bounded Buffer (Producer Consumer) with N containers, M producers and M Consumer
 * You must also maintain a shared buffer that tracks and prints how many containers  have been produced and consumed. The producers and consumers should each stop after 10 X N items have been either produced or consumed. 
 
 Your thread library needs to be built into a dynamically-linked shared library.  
+
+## Features:
+* Creating, joining, yielding, exiting, canceling, self and FIFO scheduling of threads.
+* Mutex_locks to ensure synchronization.
+
+## Assumptions:
+* The id of each thread passed to createThread function must be > 0 and unique.
+* After exiting, threads are send to FINISHED state and are later freed via calling freeThreads() function.
+* Each thread is assigned its private stack as the jumping of environment through setjmp and longjmp functions. 
+* Each thread must have its own stack so that returning from the function don’t mess-up the stack and we don’t loose the progression of the function the thread is running.
+
+
+## How to run:
+* <code>make</code> : compiles and creates dynamically linked library
+* 
